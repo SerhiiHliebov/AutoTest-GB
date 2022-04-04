@@ -60,6 +60,12 @@
                     <version>2.22.2</version>
                     <configuration>
                         <testFailureIgnore>false</testFailureIgnore>
+
+                        <!--для работы profiles-->
+                        <systemPropertyVariables>
+                            <platform>${platform}</platform>
+                        </systemPropertyVariables>
+
                         <argLine>
                             -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                         </argLine>
@@ -98,6 +104,24 @@
             </plugins>
         </pluginManagement>
     </build>
+
+    <profiles>
+        <profile>
+            <id>iOS</id>
+            <properties>
+                <platform>iOS</platform>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Android</id>
+            <properties>
+                <platform>Android</platform>
+            </properties>
+        </profile>
+    </profiles>
+
+
 
     <!--список библиотек-->
     <dependencies>

@@ -1,6 +1,7 @@
 package Lesson3.pages;
 
-import Lesson3.locators.CheckFormLocators;
+import Lesson3.locators.LocatorService;
+import Lesson3.locators.interfaces.CheckFormLocators;
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Step;
 import static com.codeborne.selenide.Selenide.$;
@@ -8,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$;
 public class FormPage {
 
     private CheckFormLocators locator() {
-        return new CheckFormLocators();
+        return LocatorService.CHECK_FORM_LOCATORS;
     }
 
     @Step("Заполнить поле любыми значениями. Например «Hello».")

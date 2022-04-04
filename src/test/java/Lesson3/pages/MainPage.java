@@ -1,9 +1,8 @@
 package Lesson3.pages;
 
-import Lesson3.locators.CheckFormLocators;
-import Lesson3.locators.UserRegistrationPageLocators;
+import Lesson3.locators.LocatorService;
+import Lesson3.locators.interfaces.UserRegistrationPageLocators;
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import com.github.romankh3.image.comparison.ImageComparison;
 import com.github.romankh3.image.comparison.ImageComparisonUtil;
 import com.github.romankh3.image.comparison.model.ImageComparisonResult;
@@ -21,7 +20,7 @@ public class MainPage {
 
         // Метод позволяет нам работать с локаторами для нужной нам страницы.
         private UserRegistrationPageLocators locator() {
-            return new UserRegistrationPageLocators();
+            return LocatorService.USER_REGISTRATION_PAGE_LOCATORS;
         }
 
 
@@ -71,6 +70,12 @@ public class MainPage {
          public FormPage clickFormButton() {
             $(locator().formButton()).click();
             return new FormPage();
+    }
+
+        @Step("Клик на Swipe")
+         public SwipePage clickSwipe() {
+            $(locator().swipeMenuButton());
+             return new SwipePage();
     }
 
 
