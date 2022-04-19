@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Testing Mobile App" parallel="tests" thread-count="1">
+    <test name="FormTest">
+        <packages>
+            <package name="src/test/java/Lesson3/tests/FormTest.java"/>
+        </packages>
+    </test>
+    <test name="UserRegistrationTest">
+        <packages>
+            <package name="src/test/java/Lesson3/tests/UserRegistrationTest.java"/>
+        </packages>
+    </test>
+</suite>
+
