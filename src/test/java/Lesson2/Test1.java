@@ -21,7 +21,7 @@ public class Test1 {
         capabilities.setCapability("platformVersion", "10");
         capabilities.setCapability("udid", "emulator-5554");
         capabilities.setCapability("automationName", "UiAutomator2");
-        capabilities.setCapability("app", "C:\\Users\\huka7\\Downloads\\Android-NativeDemoApp-0.2.1.apk");
+        capabilities.setCapability("app", "D:\\Downloads\\Android-NativeDemoApp-0.2.1.apk");
 
         MobileDriver driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
         Thread.sleep(2000);

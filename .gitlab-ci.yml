@@ -1,0 +1,11 @@
+stages:
+  - test
+
+test_job:
+  stage: test
+  tags:
+    - gb-runner
+  only:
+    - Lesson8
+  script:
+    - mvn clean test
