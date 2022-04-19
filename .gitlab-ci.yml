@@ -5,7 +5,7 @@ stages:
 test_job:
   stage: test
   tags:
-    - gb-runner
+    - shell
   only:
     - lesson8
   script:
