@@ -1,3 +1,4 @@
+
 stages:
   - test
 
@@ -9,3 +10,7 @@ test_job:
     - Lesson8 ci cd
   script:
     - mvn clean test -DsuiteXmlFile=testng.xml
+  artifacts:
+    when: always
+    paths:
+      - allure-results
