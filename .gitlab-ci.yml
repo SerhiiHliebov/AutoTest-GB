@@ -6,6 +6,6 @@ test_job:
   tags:
     - gb-runner
   only:
-    - Lesson8
+    - master
   script:
     - mvn clean test
