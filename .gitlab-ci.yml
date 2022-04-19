@@ -9,7 +9,3 @@ test_job:
     - master
   script:
     - mvn clean test -DsuiteXmlFile=testng.xml
-  artifacts:
-    when: always
-    paths:
-      - allure-results
