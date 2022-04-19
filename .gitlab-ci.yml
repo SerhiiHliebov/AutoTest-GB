@@ -7,7 +7,7 @@ test_job:
   tags:
     - gb-runner
   only:
-    - lesson8 ci cd
+    - lesson8
   script:
     - mvn clean test -DsuiteXmlFile=testng.xml
 
