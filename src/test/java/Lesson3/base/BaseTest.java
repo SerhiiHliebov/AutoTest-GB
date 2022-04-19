@@ -41,7 +41,7 @@ public class BaseTest {
         capabilities.setCapability("platformVersion", "10");
         capabilities.setCapability("udid", "emulator-5554");
         capabilities.setCapability("automationName", "UiAutomator2");
-        capabilities.setCapability("app", "C:\\Users\\huka7\\Downloads\\Android-NativeDemoApp-0.2.1.apk");
+        capabilities.setCapability("app", "D:\\Downloads\\Android-NativeDemoApp-0.2.1.apk");
 
 
         Configuration.reportsFolder = "screenshots/actual";
