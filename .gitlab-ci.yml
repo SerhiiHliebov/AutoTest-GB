@@ -8,4 +8,5 @@ test_job:
   only:
     - master
   script:
-    - mvn clean test
+    - mvn clean test -DsuiteXmlFile=testng.xml
+
