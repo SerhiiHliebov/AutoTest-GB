@@ -10,4 +10,7 @@ test_job:
     - lesson8
   script:
     - mvn clean test -DsuiteXmlFile=testng.xml
-
+  artifacts:
+    when: always
+    paths:
+      - allure-results
