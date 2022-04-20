@@ -7,7 +7,7 @@ test_job:
   tags:
     - shell
   only:
-    - Lesson8
+    - Lesson8 ci
   script:
     - mvn clean test -DsuiteXmlFile=testng.xml
   artifacts:
