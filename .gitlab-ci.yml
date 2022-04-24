@@ -9,5 +9,5 @@ test_job:
   only:
     - lesson8
   script:
-    - mvn clean test -DsuiteXmlFile=testng.xml
+    - mvn clean test
 
