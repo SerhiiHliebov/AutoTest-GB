@@ -8,8 +8,6 @@ test_job:
     - gb-runner
   only:
     - Lesson8
-  before_script:
-    - export PATH=$PATH:\Program Files\apache-maven-3.8.5
   script:
     - mvn clean test -DsuiteXmlFile=testng.xml
 
