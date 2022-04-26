@@ -7,7 +7,7 @@ test_job:
   tags:
     - gb-runner
   only:
-    - Lesson3
+    - Lesson8
   script:
     - mvn clean test -DsuiteXmlFile=testng.xml
   artifacts:
