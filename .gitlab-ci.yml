@@ -5,9 +5,9 @@ stages:
 test_job:
   stage: test
   tags:
-    - shell
+    - gb-runner
   only:
-    - Lesson8
+    - Lesson3
   script:
     - mvn clean test -DsuiteXmlFile=testng.xml
   artifacts:
